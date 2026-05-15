@@ -1,7 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { Send, Instagram, Mail, ExternalLink } from "lucide-react"
+import { Send, Instagram, Mail, ExternalLink, Target } from "lucide-react"
 
 const footerLinks = {
   product: [

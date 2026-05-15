@@ -4,7 +4,6 @@ import { motion } from "framer-motion"
 import { useInView } from "framer-motion"
 import { useRef, useState } from "react"
 import { Copy, CheckCircle2, Smartphone, Wallet, ShieldCheck, ArrowRight } from "lucide-react"
-
 const paymentMethods = [
   {
     id: "mpesa",
@@ -103,7 +102,6 @@ export function PaymentSection() {
             Choose your preferred payment method below. Instant access after payment confirmation.
           </p>
         </motion.div>
-
         {/* Payment Methods Tabs */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -196,7 +194,7 @@ export function PaymentSection() {
                         <p className="text-lg font-semibold text-white">{method.details.network}</p>
                       </div>
                       {/* QR Code placeholder */}
-                      <div className="glass rounded-xl p-6 flex flex-col items-center">
+                       <div className="glass rounded-xl p-6 flex flex-col items-center">
                         <div className="w-32 h-32 bg-white rounded-lg p-2 mb-3">
                           <div className="w-full h-full bg-[#050505] rounded flex items-center justify-center">
                             <Wallet className="w-8 h-8 text-[#D4AF37]" />
@@ -207,8 +205,6 @@ export function PaymentSection() {
                     </div>
                   )}
                 </div>
-
-                {/* Instructions */}
                 <div>
                   <h4 className="text-sm uppercase tracking-wider text-[#A1A1AA] mb-4">Instructions</h4>
                   <div className="space-y-3">
